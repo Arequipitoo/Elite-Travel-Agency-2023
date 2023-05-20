@@ -63,6 +63,12 @@
   }
   
   /* Estilos del header */
+
+ .logo img {
+  max-width: 200px; /* Ajusta el tamaño máximo del logo según tus preferencias */
+  height: auto; /* Mantiene la proporción de aspecto del logo */
+ }
+
   
   .sticky-header {
     position: fixed;
