@@ -1,294 +1,357 @@
-/* Estilos.css */
+
+  /* Estilos.css */
 
 /* Estilos de la barra de desplazamiento */
 ::-webkit-scrollbar {
-    width: 6px; /* Ancho de la barra de desplazamiento */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: transparent; /* Color de fondo de la pista de la barra de desplazamiento */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #777; /* Color del pulgar de la barra de desplazamiento */
-    border-radius: 3px; /* Radio de borde del pulgar de la barra de desplazamiento */
-  }
-  
-  /* Animación de la barra de desplazamiento */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color del pulgar de la barra de desplazamiento al pasar el mouse por encima */
-  }
-  
-  /* Ocultar la barra de desplazamiento cuando no se esté interactuando */
-  body {
-    scrollbar-width: thin; /* Ancho fino de la barra de desplazamiento (compatible con Firefox) */
-    scrollbar-color: transparent transparent; /* Color transparente para ocultar la barra de desplazamiento */
-  }
-  
-  body:hover {
-    scrollbar-color: #777 #f4f4f4; /* Color de la barra de desplazamiento al interactuar con ella */
-  }
-  
-  :root {
-    --color-primary: #1f2532;
-    --color-secondary: #ffffff;
-    --color-tertiary: #ff6600;
-  }
-  
-  /* Personalización de la scrollbar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: var(--color-primary);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--color-secondary);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-tertiary);
-  }
-  
-  
-  /* Estilos generales */
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-  }
-  
-  /* Estilos del header */
-  
-  .logo img {
-    max-width: 50px; /* Ajusta el tamaño máximo del logo según tus preferencias */
-    height: auto; /* Mantiene la proporción de aspecto del logo */
-  }
+  width: 6px; /* Ancho de la barra de desplazamiento */
+}
 
+::-webkit-scrollbar-track {
+  background: transparent; /* Color de fondo de la pista de la barra de desplazamiento */
+}
 
-  .sticky-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    /* Añade aquí los estilos deseados para la barra superior */
-  }
-  
-  header {
-    background-color: #1f2532;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    background-image: url('https://drive.google.com/file/d/1g6It7GrFSzjvXmXnrGkgrp-CBohuM-uG/view?usp=sharing');
-    width: 50px;
-    height: 50px;
-  }
-  
-  .company-name {
-    color: #ffffff;
-    padding: 15px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
-    flex-grow: 1;
-  }
-  
-  .header-links ul {
-    list-style: inside;
-    margin: 0px;
-    padding: 17px;
-    text-align: initial;
-    display: flex;
-    flex-grow: 1;
-  }
-  
-  .header-links li {
-    margin-left: 20px;
-  }
-  
-  .header-links a {
-    color: #ffffff;
-    text-decoration: none;
-    position: relative;
-    transition: color 0.3s;
-  }
-  
-  .header-links a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    bottom: -2px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.3s;
-  }
-  
-  .header-links a:hover {
-    color: #ffcc00; /* Cambiar el color al pasar el mouse */
-  }
-  
-  .header-links a:hover::after {
-    transform: scaleX(1);
-  }
-  
-  /* Estilos del hero section */
-  .hero-section {
-    background-image: url(https://s2.ppllstatics.com/burgosconecta/www/multimedia/202002/14/media/cortadas/cieloazul1-k1zG-U100155473657HzH-984x608@RC.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 335px 0;
-    text-align: center;
-  }
-  
-  .hero-content {
-    color: rgb(0, 0, 0);
-  }
-  
-  .hero-content h1 {
-    font-size: 48px;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
-  }
-  
-  .hero-content p {
-    font-size: 24px;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); 
-  
-  }
-  /* Estilos del contenido */
-  .content {
-    padding: 40px;
-  }
-  
-  .section-content {
-    margin-bottom: 40px;
-  }
-  
-  .section-content h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .section-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  #planes {
-    background-color: #f5f5f5f1;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  #planes .section-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
-  #planes h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  #planes p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  #planes .plan {
-    margin-bottom: 20px;
-  }
-  
-  #planes .plan h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  #planes .plan p {
-    font-size: 16px;
-  }
-  
-  /* Estilos del footer */
-  footer {
-    background-color: #1f2532;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .policies ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .policies li {
-    margin-bottom: 5px;
-  }
-  
-  .policies h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .small-text {
-    padding: 10px;
-    text-align: center;
-    font-size: 12px;
-    color: #666666;
-  }
-  
-  .container {
-    max-width: 800px; /* Ajusta el ancho máximo del contenedor según tus preferencias */
-    margin: 0 auto; /* Centra horizontalmente el contenedor */
-    padding: 20px; /* Agrega un espacio interno al contenedor */
-  }
-  
-  /* Estilos de la sección Misión y Visión */
-  #mision-vision {
-    text-align: center;
-    padding: 40px 0;
-  }
-  
-  #mision-vision h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  #mision-vision p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos adicionales para resaltar Misión y Visión */
-  #mision-vision .mision {
-    color: #1f2532;
-    font-weight: bold;
-  }
-  
-  #mision-vision .vision {
-    color: #ff9f00;
-    font-weight: bold;
-  }
+::-webkit-scrollbar-thumb {
+  background: #777; /* Color del pulgar de la barra de desplazamiento */
+  border-radius: 3px; /* Radio de borde del pulgar de la barra de desplazamiento */
+}
+
+/* Animación de la barra de desplazamiento */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del pulgar de la barra de desplazamiento al pasar el mouse por encima */
+}
+
+/* Ocultar la barra de desplazamiento cuando no se esté interactuando */
+body {
+  scrollbar-width: thin; /* Ancho fino de la barra de desplazamiento (compatible con Firefox) */
+  scrollbar-color: transparent transparent; /* Color transparente para ocultar la barra de desplazamiento */
+}
+
+body:hover {
+  scrollbar-color: #777 #f4f4f4; /* Color de la barra de desplazamiento al interactuar con ella */
+}
+
+:root {
+  --color-primary: #1f2532;
+  --color-secondary: #ffffff;
+  --color-tertiary: #ff6600;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Personalización de la scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-tertiary);
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+/* Estilos del header */
+.logo img {
+  max-width: 50px; /* Ajusta el tamaño máximo del logo según tus preferencias */
+  height: auto; /* Mantiene la proporción de aspecto del logo */
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  /* Añade aquí los estilos deseados para la barra superior */
+}
+
+header {
+  background-color: #1f2532;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background-image: url('https://drive.google.com/file/d/1g6It7GrFSzjvXmXnrGkgrp-CBohuM-uG/view?usp=sharing');
+  width: 50px;
+  height: 50px;
+}
+
+.company-name {
+  color: #ffffff;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.header-links ul {
+  list-style: inside;
+  margin: 0px;
+  padding: 17px;
+  text-align: initial;
+  display: flex;
+  flex-grow: 1;
+}
+
+.header-links li {
+  margin-left: 20px;
+}
+
+.header-links a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.header-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.header-links a:hover {
+  color: #ffcc00; /* Cambiar el color al pasar el mouse */
+}
+
+.header-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Estilos del hero section */
+.hero-section {
+  background-image: url(https://s2.ppllstatics.com/burgosconecta/www/multimedia/202002/14/media/cortadas/cieloazul1-k1zG-U100155473657HzH-984x608@RC.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 335px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 50;
+  text-shadow: 15px 15px 22px rgba(0, 0, 0, 0.5); /* Agrega un sombreado al texto */
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #ffffff; /* Cambia el color del título */
+  text-shadow: 15px 15px 22px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5); /* Agrega un sombreado y un contorno al texto */
+}
+
+.hero-content p {
+  font-size: 24px;
+  color: #ffffff; /* Cambia el color del párrafo */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5); /* Agrega un sombreado y un contorno al texto */
+}
+
+/* Estilos del contenido */
+.content {
+  padding: 40px;
+}
+
+.section-content {
+  margin-bottom: 40px;
+}
+
+.section-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#planes {
+  background-color: #f5f5f5f1;
+  padding: 40px;
+  text-align: center;
+}
+
+#planes .section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#planes h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#planes p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#planes .plan {
+  margin-bottom: 20px;
+}
+
+#planes .plan h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#planes .plan p {
+  font-size: 16px;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #1f2532 !important;
+  padding: 20px !important;
+  color: white !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.policies ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.policies li {
+  margin-bottom: 5px;
+}
+
+.policies h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.small-text {
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+
+.container {
+  max-width: 800px; /* Ajusta el ancho máximo del contenedor según tus preferencias */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  padding: 20px; /* Agrega un espacio interno al contenedor */
+}
+
+/* Estilos de la sección Misión y Visión */
+#mision-vision {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#mision-vision h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#mision-vision p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilos adicionales para resaltar Misión y Visión */
+#mision-vision .mision {
+  color: #1f2532;
+  font-weight: bold;
+}
+
+#mision-vision .vision {
+  color: #ff9f00;
+  font-weight: bold;
+}
+
+#contacto {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#contacto p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.btn-enviar {
+  background-color: #1f2532;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button.btn-enviar:hover {
+  background-color: #555555;
+}
